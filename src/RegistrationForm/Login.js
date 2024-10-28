@@ -26,7 +26,7 @@ const Login = () => {
             <input type="text" placeholder="Username" onChange={(e) => setUsername(e.target.value)} required /><br />
             <input type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} required /><br />
             <button disabled={username == '' || password == ''} type="submit" onClick={() => { (token == '' || token == null || token == undefined) ? setError(true) : navigate('/auction-list')}}>Login</button>
-            {error && <p style={{color: 'red'}}>The provided credentials are not correct. Please try with correct credentials!</p>}
+            {error && <p style={{color: 'red'}}>The provided credentials are not correct. Please try with right credentials!</p>}
         </form>
     );
 };

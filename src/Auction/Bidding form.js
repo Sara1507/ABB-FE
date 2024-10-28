@@ -40,6 +40,7 @@ function Biddingform() {
     }
   };
 
+  
   return (
     <div>
       <h1>Auction: {auction?.item}</h1>
